@@ -1,0 +1,67 @@
+.nav-list {
+	padding: 30px 0px 20px 5%;
+	width:40%;
+	display:none;
+	margin:0px;
+}
+.binslashnick {
+	display: none;
+	width:45%;
+	font-family:monospace;
+	text-align: right;
+}
+.binslashnick h3{
+	display: inline;
+}
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 700px) {
+	.nav-list{
+		display:inline-block;
+	}
+	.binslashnick{
+		display:inline-block;
+	}
+	.mobile-nav{
+		display: none;
+	}
+}
+
+.mobile-nav {
+	padding:10px;
+	position:fixed;
+	z-index:2;
+	background-color: #fff;
+	width:100%;
+	box-shadow: 1px 1px 2px gray;
+}
+
+.logo a {
+	text-decoration: none;
+}
+.logo h3{
+	display: inline;
+	font-family:monospace;
+	margin:0px;
+}
+
+.blue{
+	color:#5FCEEA;
+}
+.brown{
+	color:#A47C52;
+}
+.nav-list li{
+	display:inline-block;
+	text-decoration:none;
+	padding: 0px 10px;
+	font-size: 14pt;
+}
+
+.nav-list a{
+	text-decoration: none;
+	color:#5FCEEA;
+}
+
+.selected{
+	color: #A47C52;
+}

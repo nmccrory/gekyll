@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Blogs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../static/skeleton/normalize.css">
+		<link rel="stylesheet" href="../static/skeleton/skeleton.css">
+		<link rel="stylesheet" href="../static/css/blogs.css">
+		<link rel="stylesheet" href="../static/css/global.css">
+	</head>
+	<body>
+		<div class="mobile-nav">
+			<span class="logo"><a href="/blog"><h3 class="brown">bin</h3><h3 class="blue">/</h3><h3 class="brown">nick</h3></a></span>
+		</div>
+		<div class="nav-wrapper">
+			<ul class="nav-list">
+				<a href="/blogs"><li>Blog</li></a>
+				<a href="/portfolio"><li>Projects</li></a>
+				<a href="/about"><li>About</li></a>
+			</ul>
+			<div class="binslashnick">
+				<h3 class="brown">bin/nick</h3>
+			</div>
+		</div>
+		<div class="container">
+			<div class="twelve columns">
+				<div class="article-list-wrapper">
+					{{range $val := .}}
+					<div class="article-list-item">
+						<h3><a href="/blogs/{{$val.Route}}">{{$val.Title}}</a></h3>
+						<p class="article-date">{{$val.Date.Month}} {{$val.Date.Day}}, {{$val.Date.Year}}</p>
+						<p>{{$val.First}}</p>
+					</div>
+					{{end}}
+				</div>
+			</div>		
+		</div>
+	</body>
+</html>

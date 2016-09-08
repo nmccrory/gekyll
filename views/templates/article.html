@@ -1,55 +1,32 @@
 <html>
 	<head>
-		<title>bin/nick</title>
+		<title>Blog</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="../static/skeleton/normalize.css">
-		<link rel="stylesheet" href="../static/skeleton/skeleton.css">
-		<link rel="stylesheet" href="../static/css/global.css">
-		<link rel="stylesheet" href="../static/css/article.css">
+		<style>
+			body{
+				font-family: sans-serif;
+				font-weight:200;
+			}
+			pre{
+				background-color: #CBCBCB;
+				padding:10px;
+			}
+			.container{
+				margin:0 auto;
+				width: 70%;
+			}
+		</style>
 	</head>
 	<body>
-		<div class="mobile-nav">
-			<span class="logo"><a href="/blog"><h3 class="brown">bin</h3><h3 class="blue">/</h3><h3 class="brown">nick</h3></a></span>
-		</div>
-		<div class="nav-wrapper">
-			<ul class="nav-list">
-				<a href="/blogs"><li>Blog</li></a>
-				<a href="/portfolio"><li>Projects</li></a>
-				<a href="/about"><li>About</li></a>
-			</ul>
-			<div class="binslashnick">
-				<h3 class="brown">bin/nick</h3>
-			</div>
-		</div>
 		<div class="container">
-			<div class="twelve column">
+			<div>
 				<div class="article-wrapper">
 					<article>
 						<h1>{{.Title}}</h1>
-						<h6>{{.Date.Month}} {{.Date.Day}}, {{.Date.Year}}</h6>
-						<img src="{{ .Image }}" alt="">
+						<h5>{{.Date.Month}} {{.Date.Day}}, {{.Date.Year}}</h5>
 						{{.Body}}
 					</article>
 				</div>
-			</div>
-		</div>
-		<div class="profile">
-			<div class="profile-wrapper">
-				<img class="profile-pic" src="https://scontent.fsnc1-1.fna.fbcdn.net/v/t1.0-1/p160x160/13925081_10154018638336032_3307820309549487486_n.jpg?oh=2b6e48ef609dfd7434d5f5045969ac72&oe=58569435" alt="">
-			</div>
-			<div class="lines-wrapper">
-				<div class="blue-line">
-					
-				</div>
-				<div class="brown-line">
-					
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="contact-wrapper">
-				<p><i>{{.Author}}</i></p>
-				<a href="http://twitter.com/nickmccrory">@nickmccrory</a>
 			</div>
 		</div>
 	</body>

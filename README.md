@@ -3,12 +3,12 @@ Unlike the static site generator Jekyll, Gekyll uses Go and JSON to make an ultr
 
 ### Installation
 ```
-$ git clone https://github.com/nmccrory/minimal-blog.git
+$ git clone https://github.com/nmccrory/gekyll.git
 ```
 ```
-$ cd minimal-blog
+$ cd gekyll
 $ go build .
-$ ./minimal-blog
+$ ./gekyll
 ```
 ## Overview
 Blogs are saved in a folder as JSON objects which are then read, stored, and formatted by Go. 

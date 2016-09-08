@@ -3,5 +3,5 @@
 	"Title": "Sample Blog",
 	"Author": "nmccrory",
 	"Date": "09/10/2016",
-	"Body": "<p>This is a sample blog post. It's purpose is to give you an idea of why Minimal Blog uses Safe and Unsafe types for storing escaped and unescaped HTML.</p><h3>Secondary headings</h3><p>With unescaped HTML we are able to dynamically generate HTML elements (such as secondary headings) through our Go templates .</p> <h4>I can insert code snippets:</h4><pre><code>while(true) {\n    x++\n}\n\nreturn x</code></pre><p>As well as the capability to render links such as this one -> <a href='http://google.com'>Google</a>."
+	"Body": "<p>This is a sample blog post. It's purpose is to give you an idea of why Gekyll uses Safe and Unsafe types for storing escaped and unescaped HTML.</p><h3>Secondary headings</h3><p>With unescaped HTML we are able to dynamically generate HTML elements (such as secondary headings) through our Go templates .</p> <h4>I can insert code snippets:</h4><pre><code>while(true) {\n    x++\n}\n\nreturn x</code></pre><p>As well as the capability to render links such as this one -> <a href='http://google.com'>Google</a>."
 }
